@@ -39,14 +39,19 @@ html,body{overflow-x:hidden}
   .g5{grid-template-columns:1fr 1fr!important;row-gap:28px!important}
   .gFooter{grid-template-columns:1fr!important;gap:32px!important}
   .gCardImg{height:200px!important}
-  [style*="padding:40px 44px 0"]{padding:20px 20px 0!important}
-  [style*="padding:0 44px 44px"]{padding:0 20px 28px!important}
-  [style*="padding:44px"]{padding:24px 20px!important}
-  [style*="padding:48px 44px"]{padding:32px 20px!important}
-  [style*="padding:70px 6% 34px"]{padding:48px 6% 28px!important}
-  [style*="padding:110px 6% 90px"]{padding:56px 6% 48px!important}
-  [style*="padding:70px 60px"]{padding:32px 22px!important}
-  [style*="padding:90px 6%"]{padding:48px 6%!important}
+  .pHeroTop{padding:20px 20px 0!important}
+  .pHeroBot{padding:0 20px 28px!important}
+  .pCard44{padding:24px 20px!important}
+  .pForm4844{padding:32px 20px!important}
+  .pFooter{padding:48px 6% 28px!important}
+  .pStats{padding:56px 6% 48px!important}
+  .pCtaBox{padding:32px 22px!important}
+  .pCtaSection{padding:48px 6%!important}
+  .ctaCallBtn,.ctaWaBtn{font-size:.82rem!important;padding:14px 18px!important;white-space:nowrap!important;width:100%;justify-content:center}
+  .ctaCallBtn{display:block;text-align:center}
+  .pSec110{padding:48px 0!important}
+  .pSec90{padding:40px 0!important}
+  .pBlobImg{min-height:260px!important}
 }
 @media (max-width:520px){
   .g5{grid-template-columns:1fr!important}
@@ -123,9 +128,9 @@ html,body{overflow-x:hidden}
   <div style="position:relative;border-radius:40px;overflow:hidden;box-shadow:0 40px 90px rgba(15,35,28,.35);display:flex;flex-direction:column;justify-content:space-between">
     <img src="assets/hero-clinica.webp" alt="Vista aérea de la clínica Neje Binoi" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0">
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,26,20,.55) 0%,rgba(11,26,20,.35) 35%,rgba(9,20,16,.75) 65%,rgba(6,14,11,.96) 100%);z-index:1"></div>
-    <div style="position:relative;z-index:2;padding:40px 44px 0;display:flex;justify-content:flex-end;align-items:flex-start;gap:20px;flex-wrap:wrap">
+    <div class="pHeroTop" style="position:relative;z-index:2;padding:40px 44px 0;display:flex;justify-content:flex-end;align-items:flex-start;gap:20px;flex-wrap:wrap">
     </div>
-    <div style="position:relative;z-index:2;padding:0 44px 44px;max-width:680px">
+    <div class="pHeroBot" style="position:relative;z-index:2;padding:0 44px 44px;max-width:680px">
       <div style="font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#BFD8CC;margin-bottom:18px;font-weight:700;display:flex;align-items:center;gap:10px"><span style="width:24px;height:1.5px;background:var(--mint);display:inline-block"></span>Tequisquiapan, Querétaro</div>
       <h1 style="font-family:'Fraunces',serif;font-weight:400;font-size:clamp(2.5rem,5vw,3.9rem);line-height:1.08;color:#fff;letter-spacing:-.01em;margin-bottom:22px">Pedir ayuda es el primer paso. <em style="font-style:italic;color:var(--mint)">El resto lo caminamos juntos.</em></h1>
       <p style="color:#DCE7E0;font-size:1.05rem;font-weight:300;max-width:540px;margin-bottom:30px">Clínica en Tequisquiapan, Querétaro. Tratamiento residencial para adicciones, ludopatía y trastornos emocionales, con equipo médico y psicológico especializado, absoluto respeto al anonimato y la familia integrada al proceso.</p>
@@ -162,7 +167,7 @@ html,body{overflow-x:hidden}
   </div>
 </div>
 
-<section style="max-width:1240px;margin:0 auto;padding:110px 6% 90px">
+<section class="pStats" style="max-width:1240px;margin:0 auto;padding:110px 6% 90px">
   <div class="g5" style="display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-bottom:44px">
     <div style="padding-right:30px"><div style="width:22px;height:3px;background:var(--mint);border-radius:2px;margin-bottom:16px"></div><div style="font-family:'Fraunces',serif;font-size:2.6rem;color:var(--green);line-height:1">9</div><div style="font-size:.86rem;color:var(--mute);margin-top:10px;line-height:1.5">Años acompañando familias</div></div>
     <div style="padding:0 30px;border-left:1px solid var(--line)"><div style="width:22px;height:3px;background:var(--mint);border-radius:2px;margin-bottom:16px"></div><div style="font-family:'Fraunces',serif;font-size:2.6rem;color:var(--green);line-height:1">35</div><div style="font-size:.86rem;color:var(--mute);margin-top:10px;line-height:1.5">Días de programa residencial estructurado</div></div>
@@ -180,7 +185,7 @@ html,body{overflow-x:hidden}
   </div>
 </section>
 
-<section style="background:var(--cream2);padding:90px 0;position:relative;overflow:hidden">
+<section class="pSec90" style="background:var(--cream2);padding:90px 0;position:relative;overflow:hidden">
   <div style="position:absolute;bottom:-140px;right:-140px;width:340px;height:340px;border-radius:50%;background:var(--mint-pale);opacity:.6"></div>
   <div class="gA" style="max-width:1240px;margin:0 auto;padding:0 6%;display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start;position:relative">
     <div>
@@ -194,7 +199,7 @@ html,body{overflow-x:hidden}
   </div>
 </section>
 
-<section id="tratamientos" style="background:#fff;padding:110px 0">
+<section class="pSec110" id="tratamientos" style="background:#fff;padding:110px 0">
   <div style="max-width:1240px;margin:0 auto;padding:0 6%">
     <div style="max-width:700px;margin-bottom:54px">
       <div style="font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe-dp);margin-bottom:20px;font-weight:700;display:flex;align-items:center;gap:10px"><span style="width:30px;height:1.5px;background:var(--mint);display:inline-block"></span>Áreas de tratamiento</div>
@@ -244,10 +249,10 @@ html,body{overflow-x:hidden}
   </div>
 </section>
 
-<section id="familia" style="background:#fff;padding:110px 0">
+<section class="pSec110" id="familia" style="background:#fff;padding:110px 0">
   <div style="max-width:1240px;margin:0 auto;padding:0 6%">
     <div class="g2" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-bottom:64px">
-      <div style="border-radius:63% 37% 54% 46% / 55% 45% 61% 39%;overflow:hidden;min-height:420px;position:relative">
+      <div class="pBlobImg" style="border-radius:63% 37% 54% 46% / 55% 45% 61% 39%;overflow:hidden;min-height:420px;position:relative">
         <img loading="lazy" decoding="async" src="assets/familia-proceso.webp" alt="Familia acompañando el proceso" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
       </div>
       <div>
@@ -276,7 +281,7 @@ html,body{overflow-x:hidden}
       </div>
     </div>
 
-    <div style="background:var(--green);border-radius:32px;padding:48px 44px;color:#CFE0D7">
+    <div class="pForm4844" style="background:var(--green);border-radius:32px;padding:48px 44px;color:#CFE0D7">
       <h3 style="font-family:'Fraunces',serif;font-size:1.6rem;font-weight:500;color:#fff;margin-bottom:10px">En qué acompañamos a la familia</h3>
       <p style="color:#B7CCC1;max-width:640px;margin-bottom:32px;font-size:.98rem">A lo largo del proceso, y según lo que cada familia necesite, trabajamos temas que suelen aparecer en casi todos los casos.</p>
       <div class="g3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
@@ -291,7 +296,7 @@ html,body{overflow-x:hidden}
   </div>
 </section>
 
-<section id="programa" style="background:var(--green);color:#DCE7E0;padding:110px 0;position:relative;overflow:hidden">
+<section class="pSec110" id="programa" style="background:var(--green);color:#DCE7E0;padding:110px 0;position:relative;overflow:hidden">
   <div style="position:absolute;top:-100px;right:-100px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.05)"></div>
   <div style="max-width:1240px;margin:0 auto;padding:0 6%;position:relative">
     <div style="max-width:700px;margin-bottom:54px">
@@ -334,7 +339,7 @@ html,body{overflow-x:hidden}
 
 
 
-<section id="equipo" style="background:var(--cream2);padding:110px 0">
+<section class="pSec110" id="equipo" style="background:var(--cream2);padding:110px 0">
   <div style="max-width:1240px;margin:0 auto;padding:0 6%">
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:44px;flex-wrap:wrap">
       <div style="max-width:700px">
@@ -384,7 +389,7 @@ html,body{overflow-x:hidden}
   </div>
 </section>
 
-<section id="instalaciones" style="background:#fff;padding:110px 0">
+<section class="pSec110" id="instalaciones" style="background:#fff;padding:110px 0">
   <div style="max-width:1240px;margin:0 auto;padding:0 6%">
     <div style="max-width:700px;margin-bottom:44px">
       <div style="font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe-dp);margin-bottom:20px;font-weight:700;display:flex;align-items:center;gap:10px"><span style="width:30px;height:1.5px;background:var(--mint);display:inline-block"></span>Instalaciones</div>
@@ -448,7 +453,7 @@ html,body{overflow-x:hidden}
 <section style="background:var(--cream2);padding:0">
   
 <div class="g2" style="max-width:1240px;margin:0 auto;padding:0 6%;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">
-    <div style="padding:90px 0">
+    <div class="pSec90" style="padding:90px 0">
       <div style="font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe-dp);margin-bottom:20px;font-weight:700;display:flex;align-items:center;gap:10px"><span style="width:30px;height:1.5px;background:var(--mint);display:inline-block"></span>Dónde estamos</div>
       <h2 style="font-family:'Fraunces',serif;font-weight:400;font-size:clamp(1.9rem,3.6vw,2.6rem);line-height:1.18;color:var(--green);margin-bottom:18px">Tequisquiapan, <em style="font-style:italic;color:var(--green-lt)">en el corazón del Bajío</em></h2>
       <p style="color:var(--ink-soft);margin-bottom:12px">La clínica está en Tequisquiapan, Pueblo Mágico del estado de Querétaro, en un entorno de campo abierto, clima templado todo el año y una tranquilidad que la ciudad no ofrece.</p>
@@ -462,7 +467,7 @@ html,body{overflow-x:hidden}
       <img loading="lazy" decoding="async" src="assets/tequisquiapan.webp" alt="Plaza principal de Tequisquiapan, Querétaro" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
     </div>
     
-  </div></section><section style="background:var(--green-dp);color:#CFE0D7;padding:110px 0">
+  </div></section><section class="pSec110" style="background:var(--green-dp);color:#CFE0D7;padding:110px 0">
   <div style="max-width:1240px;margin:0 auto;padding:0 6%">
     <div style="max-width:700px;margin-bottom:44px">
       <div style="font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);margin-bottom:20px;font-weight:700;display:flex;align-items:center;gap:10px"><span style="width:30px;height:1.5px;background:var(--mint);display:inline-block"></span>Historias de recuperación</div>
@@ -486,7 +491,7 @@ html,body{overflow-x:hidden}
   </div>
 </section>
 
-<section id="proceso" style="background:#fff;padding:110px 0">
+<section class="pSec110" id="proceso" style="background:#fff;padding:110px 0">
   <div style="max-width:1240px;margin:0 auto;padding:0 6%">
     <div style="max-width:700px;margin-bottom:54px">
       <div style="font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe-dp);margin-bottom:20px;font-weight:700;display:flex;align-items:center;gap:10px"><span style="width:30px;height:1.5px;background:var(--mint);display:inline-block"></span>Cómo es el proceso</div>
@@ -516,7 +521,7 @@ html,body{overflow-x:hidden}
   </div>
 </section>
 
-<section id="faq" style="background:var(--cream);padding:110px 0">
+<section class="pSec110" id="faq" style="background:var(--cream);padding:110px 0">
   <div style="max-width:1240px;margin:0 auto;padding:0 6%">
     <div style="max-width:700px;margin-bottom:54px">
       <div style="font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe-dp);margin-bottom:20px;font-weight:700;display:flex;align-items:center;gap:10px"><span style="width:30px;height:1.5px;background:var(--mint);display:inline-block"></span>Preguntas frecuentes</div>
@@ -539,8 +544,8 @@ html,body{overflow-x:hidden}
   </div>
 </section>
 
-<section id="contacto" style="padding:90px 6%;max-width:1240px;margin:0 auto">
-  <div class="gB" style="background:var(--mint-pale);border-radius:48px;padding:70px 60px;position:relative;overflow:hidden;display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center">
+<section class="pCtaSection" id="contacto" style="padding:90px 6%;max-width:1240px;margin:0 auto">
+  <div class="gB pCtaBox" style="background:var(--mint-pale);border-radius:48px;padding:70px 60px;position:relative;overflow:hidden;display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center">
     <div style="position:absolute;top:-80px;left:-80px;width:220px;height:220px;border-radius:50%;background:rgba(31,77,61,.06)"></div>
     <div style="position:absolute;bottom:-100px;right:-60px;width:260px;height:260px;border-radius:50%;background:rgba(31,77,61,.06)"></div>
     <div style="position:relative">
@@ -548,12 +553,12 @@ html,body{overflow-x:hidden}
       <h2 style="font-family:'Fraunces',serif;font-weight:400;font-size:clamp(1.9rem,3.6vw,2.6rem);line-height:1.2;color:var(--green);margin-bottom:18px">Nadie busca ayuda en su mejor momento.</h2>
       <p style="color:var(--ink-soft);font-size:1.05rem;margin-bottom:30px">No hace falta tener las ideas claras ni las palabras correctas para empezar esta conversación. Del otro lado hay un profesional que ya escuchó esta historia muchas veces, a cualquier hora del día o de la noche.</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px">
-        <a href="tel:+524142795608" style="background:var(--green);color:#fff;padding:16px 30px;border-radius:999px;font-size:.92rem;font-weight:700" style-hover="background:var(--green-lt)">Llamar ahora · 414 279 56 08</a>
-        <a href="https://wa.link/rp9diw" style="background:#25D366;color:#fff;padding:15px 29px 15px 22px;border-radius:999px;font-size:.92rem;font-weight:700;display:flex;align-items:center;gap:9px" style-hover="background:#1EBE59"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2.05 22l5.42-1.32a9.9 9.9 0 0 0 4.57 1.11h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.06h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.76.8-3.04-.2-.32a8.17 8.17 0 0 1-1.27-4.23c0-4.51 3.68-8.19 8.28-8.19 2.21 0 4.29.86 5.85 2.43a8.2 8.2 0 0 1 2.42 5.83c0 4.51-3.7 8.19-8.28 8.19zm4.53-6.13c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.96-.15.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.15-.25-.02-.38.11-.5.11-.12.25-.29.37-.44.13-.14.17-.24.25-.41.08-.16.04-.3-.02-.43-.06-.12-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.3-.22.25-.87.85-.87 2.08 0 1.22.9 2.4 1.02 2.57.13.16 1.77 2.71 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.59.1.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.47-.28z"></path></svg>Escribir por WhatsApp</a>
+        <a href="tel:+524142795608" class="ctaCallBtn" style="background:var(--green);color:#fff;padding:16px 30px;border-radius:999px;font-size:.92rem;font-weight:700" style-hover="background:var(--green-lt)">Llamar ahora · 414 279 56 08</a>
+        <a href="https://wa.link/rp9diw" class="ctaWaBtn" style="background:#25D366;color:#fff;padding:15px 29px 15px 22px;border-radius:999px;font-size:.92rem;font-weight:700;display:flex;align-items:center;gap:9px" style-hover="background:#1EBE59"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2.05 22l5.42-1.32a9.9 9.9 0 0 0 4.57 1.11h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.06h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.76.8-3.04-.2-.32a8.17 8.17 0 0 1-1.27-4.23c0-4.51 3.68-8.19 8.28-8.19 2.21 0 4.29.86 5.85 2.43a8.2 8.2 0 0 1 2.42 5.83c0 4.51-3.7 8.19-8.28 8.19zm4.53-6.13c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.96-.15.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.15-.25-.02-.38.11-.5.11-.12.25-.29.37-.44.13-.14.17-.24.25-.41.08-.16.04-.3-.02-.43-.06-.12-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.3-.22.25-.87.85-.87 2.08 0 1.22.9 2.4 1.02 2.57.13.16 1.77 2.71 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.59.1.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.47-.28z"></path></svg>Escribir por WhatsApp</a>
       </div>
       <div style="font-size:.72rem;letter-spacing:.08em;color:var(--taupe-dp);text-transform:uppercase">Confidencial · Sin compromiso · Atención las 24 horas</div>
     </div>
-    <form style="background:#fff;border-radius:28px;padding:44px;display:grid;gap:20px;box-shadow:0 20px 50px rgba(31,77,61,.12);position:relative">
+    <form class="pCard44" style="background:#fff;border-radius:28px;padding:44px;display:grid;gap:20px;box-shadow:0 20px 50px rgba(31,77,61,.12);position:relative">
       <div>
         <label style="display:block;font-size:.8rem;font-weight:700;color:var(--green);margin-bottom:8px">Nombre</label>
         <input type="text" placeholder="Tu nombre completo" style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:12px;font-size:.94rem;font-family:'Nunito Sans',sans-serif;color:var(--ink);background:var(--cream)">
@@ -579,7 +584,7 @@ html,body{overflow-x:hidden}
   </div>
 </section>
 
-<footer style="background:var(--ink);color:#8FA39A;padding:70px 6% 34px;font-size:.86rem;border-radius:48px 48px 0 0">
+<footer class="pFooter" style="background:var(--ink);color:#8FA39A;padding:70px 6% 34px;font-size:.86rem;border-radius:48px 48px 0 0">
   <div style="max-width:1240px;margin:0 auto">
     <div class="gFooter" style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-bottom:38px;border-bottom:1px solid #2C3A35">
       <div>
