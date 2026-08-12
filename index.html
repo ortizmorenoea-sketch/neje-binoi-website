@@ -45,23 +45,30 @@ html,body{overflow-x:hidden}
   [style*="padding:48px 44px"]{padding:32px 20px!important}
   [style*="padding:70px 6% 34px"]{padding:48px 6% 28px!important}
   [style*="padding:110px 6% 90px"]{padding:56px 6% 48px!important}
+  [style*="padding:70px 60px"]{padding:32px 22px!important}
+  [style*="padding:90px 6%"]{padding:48px 6%!important}
 }
 @media (max-width:520px){
   .g5{grid-template-columns:1fr!important}
 }
 /* --- mobile header redesign --- */
+.nav-toggle-input{display:none}
+.nav-burger{display:none}
+.dc-scrolldown{display:flex}
 @media (max-width:760px){
   .dc-logo-tag{display:none!important}
   .dc-logo svg{width:34px!important;height:42px!important}
   .dc-logo-name{font-size:1.05rem!important}
   header>div{padding:10px 5%!important;gap:8px!important}
-  .dc-nav{flex-basis:100%!important;order:4!important}
-  .dc-nav ul{justify-content:flex-start!important;flex-wrap:nowrap!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:8px 2px 4px!important;gap:16px!important;border-top:1px solid var(--line)!important}
-  .dc-nav ul::-webkit-scrollbar{display:none}
-  .dc-nav li{flex-shrink:0!important}
-  .dc-nav a{white-space:nowrap!important;font-size:.82rem!important}
-  .dc-cta{gap:8px!important}
+  .nav-burger{display:flex!important;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;border:1px solid var(--line);background:#fff;cursor:pointer;flex-shrink:0;order:3}
+  .dc-cta{gap:8px!important;order:2}
   .dc-cta a[href="#contacto"]{padding:10px 16px!important;font-size:.8rem!important}
+  .dc-nav{display:none!important;flex-basis:100%!important;order:5!important;width:100%}
+  .nav-toggle-input:checked ~ .dc-nav{display:block!important}
+  .dc-nav ul{flex-direction:column!important;align-items:stretch!important;flex-wrap:wrap!important;justify-content:flex-start!important;gap:2px!important;padding:12px 0 4px!important}
+  .dc-nav li{width:100%;list-style:none}
+  .dc-nav a{display:block!important;padding:12px 4px!important;font-size:.95rem!important;border-bottom:1px solid var(--line)}
+  .dc-scrolldown{display:none!important}
 }
 </style>
 <script type="application/ld+json">
@@ -88,6 +95,10 @@ html,body{overflow-x:hidden}
       <svg width="38" height="38" viewBox="0 0 220 260" fill="none" style="width: 76px; height: 92px;flex-shrink:0"><circle cx="110" cy="112" r="72" stroke="#A9998C" stroke-width="4" stroke-dasharray="410 42" stroke-dashoffset="-99" stroke-linecap="round"></circle><circle cx="34" cy="112" r="4" fill="#A9998C"></circle><circle cx="186" cy="112" r="4" fill="#A9998C"></circle><path d="M72 150 C72 118 72 92 72 88 C72 78 80 72 90 72 C100 72 108 80 108 92 L108 150" stroke="#6FD9B8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M112 72 C130 72 144 80 144 94 C144 106 132 111 122 112 C134 113 148 119 148 133 C148 149 132 156 112 154" stroke="#6FD9B8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
       <div style="font-family:'Fraunces',serif;font-size:1.35rem;font-weight:500;color:var(--green);line-height:1.1;min-width:0"><span class="dc-logo-name">Neje Binoi</span><div class="dc-logo-tag" style="font-family:'Nunito Sans',sans-serif;font-size:.62rem;letter-spacing:.14em;color:var(--mute);margin-top:3px;text-transform:uppercase;font-weight:600;white-space:normal">CLÍNICA DE ADICCIONES Y TRASTORNOS EMOCIONALES</div></div>
     </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-burger" aria-label="Abrir menú">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+    </label>
     <nav class="dc-nav" style="order:3;flex-basis:100%">
       <ul style="list-style:none;display:flex;gap:22px;align-items:center;flex-wrap:wrap;justify-content:center;padding-top:6px;border-top:1px solid var(--line)">
         <li><a href="#tratamientos" style="color:var(--ink-soft);font-size:.9rem;font-weight:600" style-hover="color:var(--green)">Tratamientos</a></li>
@@ -123,7 +134,7 @@ html,body{overflow-x:hidden}
         <a href="https://wa.link/rp9diw" style="background:#25D366;color:#fff;padding:15px 28px 15px 20px;border-radius:999px;font-size:.92rem;font-weight:700;display:flex;align-items:center;gap:9px" style-hover="background:#1EBE59"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2.05 22l5.42-1.32a9.9 9.9 0 0 0 4.57 1.11h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.06h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.76.8-3.04-.2-.32a8.17 8.17 0 0 1-1.27-4.23c0-4.51 3.68-8.19 8.28-8.19 2.21 0 4.29.86 5.85 2.43a8.2 8.2 0 0 1 2.42 5.83c0 4.51-3.7 8.19-8.28 8.19zm4.53-6.13c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.96-.15.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.15-.25-.02-.38.11-.5.11-.12.25-.29.37-.44.13-.14.17-.24.25-.41.08-.16.04-.3-.02-.43-.06-.12-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.3-.22.25-.87.85-.87 2.08 0 1.22.9 2.4 1.02 2.57.13.16 1.77 2.71 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.59.1.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.47-.28z"></path></svg>Escribir por WhatsApp</a>
       </div>
     </div>
-    <div style="position:absolute;bottom:44px;right:44px;z-index:2;color:#DCE7E0;font-size:.82rem;font-weight:600;display:flex;align-items:center;gap:6px">Descubre más<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#DCE7E0" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></div>
+    <div style="position:absolute;bottom:44px;right:44px;z-index:2;color:#DCE7E0;font-size:.82rem;font-weight:600;display:flex;align-items:center;gap:6px" class="dc-scrolldown">Descubre más<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#DCE7E0" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></div>
   </div>
 </div>
 
