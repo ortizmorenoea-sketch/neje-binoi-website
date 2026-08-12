@@ -51,10 +51,20 @@ html,body{overflow-x:hidden}
   .ctaCallBtn{display:block;text-align:center}
   .pSec110{padding:48px 0!important}
   .pSec90{padding:40px 0!important}
-  .pBlobImg{min-height:260px!important}
+  .pBlobImg{min-height:260px!important;border-radius:28px!important}
 }
 @media (max-width:520px){
   .g5{grid-template-columns:1fr!important}
+}
+@media (max-width:860px){
+  .g5>div{border-left:none!important;padding:0!important}
+}
+/* --- mobile top announcement bar --- */
+@media (max-width:640px){
+  .dc-topbar{padding:8px 5%!important;gap:6px!important}
+  .dc-topbar-loc,.dc-topbar-tel{display:none!important}
+  .dc-topbar-wa{padding:5px 10px!important}
+  .dc-topbar-wa-label{display:none!important}
 }
 /* --- mobile header redesign --- */
 .nav-toggle-input{display:none}
@@ -83,14 +93,14 @@ html,body{overflow-x:hidden}
 
 <div id="top" style="background:var(--cream)">
 
-<div style="background:var(--green-dp);color:#CFE0D7;font-size:.82rem;padding:10px 6%;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+<div class="dc-topbar" style="background:var(--green-dp);color:#CFE0D7;font-size:.82rem;padding:10px 6%;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
   <div style="display:flex;gap:22px;align-items:center;flex-wrap:wrap">
     <span><span style="width:6px;height:6px;border-radius:50%;background:var(--mint);display:inline-block;margin-right:8px;animation:pulse 2.4s infinite"></span>Atención 24 horas, todos los días</span>
-    <span style="color:#9FB6AB">Tequisquiapan, Querétaro</span>
+    <span class="dc-topbar-loc" style="color:#9FB6AB">Tequisquiapan, Querétaro</span>
   </div>
   <div style="display:flex;gap:14px;align-items:center">
-    <a href="tel:+524142795608" style="color:#fff;font-weight:600" style-hover="color:var(--mint)">414 279 56 08</a>
-    <a href="https://wa.link/rp9diw" style="background:#25D366;color:#fff;padding:6px 16px 6px 10px;border-radius:999px;font-weight:700;font-size:.78rem;display:flex;align-items:center;gap:6px" style-hover="background:#1EBE59"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2.05 22l5.42-1.32a9.9 9.9 0 0 0 4.57 1.11h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.06h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.76.8-3.04-.2-.32a8.17 8.17 0 0 1-1.27-4.23c0-4.51 3.68-8.19 8.28-8.19 2.21 0 4.29.86 5.85 2.43a8.2 8.2 0 0 1 2.42 5.83c0 4.51-3.7 8.19-8.28 8.19zm4.53-6.13c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.96-.15.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.15-.25-.02-.38.11-.5.11-.12.25-.29.37-.44.13-.14.17-.24.25-.41.08-.16.04-.3-.02-.43-.06-.12-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.3-.22.25-.87.85-.87 2.08 0 1.22.9 2.4 1.02 2.57.13.16 1.77 2.71 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.59.1.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.47-.28z"></path></svg>WhatsApp</a>
+    <a href="tel:+524142795608" class="dc-topbar-tel" style="color:#fff;font-weight:600" style-hover="color:var(--mint)">414 279 56 08</a>
+    <a href="https://wa.link/rp9diw" class="dc-topbar-wa" style="background:#25D366;color:#fff;padding:6px 16px 6px 10px;border-radius:999px;font-weight:700;font-size:.78rem;display:flex;align-items:center;gap:6px" style-hover="background:#1EBE59"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2.05 22l5.42-1.32a9.9 9.9 0 0 0 4.57 1.11h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.06h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.76.8-3.04-.2-.32a8.17 8.17 0 0 1-1.27-4.23c0-4.51 3.68-8.19 8.28-8.19 2.21 0 4.29.86 5.85 2.43a8.2 8.2 0 0 1 2.42 5.83c0 4.51-3.7 8.19-8.28 8.19zm4.53-6.13c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.96-.15.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.15-.25-.02-.38.11-.5.11-.12.25-.29.37-.44.13-.14.17-.24.25-.41.08-.16.04-.3-.02-.43-.06-.12-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.3-.22.25-.87.85-.87 2.08 0 1.22.9 2.4 1.02 2.57.13.16 1.77 2.71 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.59.1.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.47-.28z"></path></svg><span class="dc-topbar-wa-label">WhatsApp</span></a>
   </div>
 </div>
 
@@ -463,7 +473,7 @@ html,body{overflow-x:hidden}
         <div><div style="font-family:'Fraunces',serif;font-size:1.7rem;color:var(--green)">40 min</div><div style="font-size:.83rem;color:var(--mute)">Desde Querétaro capital</div></div>
         <div><div style="font-family:'Fraunces',serif;font-size:1.7rem;color:var(--green)">18 °C</div><div style="font-size:.83rem;color:var(--mute)">Temperatura media anual</div></div>
       </div>
-    </div><div style="border-radius:63% 37% 54% 46% / 55% 45% 61% 39%;overflow:hidden;min-height:460px;position:relative">
+    </div><div class="pBlobImg" style="border-radius:63% 37% 54% 46% / 55% 45% 61% 39%;overflow:hidden;min-height:460px;position:relative">
       <img loading="lazy" decoding="async" src="assets/tequisquiapan.webp" alt="Plaza principal de Tequisquiapan, Querétaro" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
     </div>
     
