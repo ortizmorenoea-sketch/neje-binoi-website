@@ -33,6 +33,27 @@ a:hover{color:var(--green-lt)}
 img{display:block;max-width:100%}
 [id]{scroll-margin-top:86px}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+html,body{overflow-x:hidden}
+@media (max-width:860px){
+  [style*="grid-template-columns:320px 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:repeat(5,1fr)"]{grid-template-columns:1fr 1fr!important;row-gap:28px!important}
+  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:.85fr 1.15fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:.9fr 1.1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1.05fr .95fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1.6fr 1fr 1fr 1fr"]{grid-template-columns:1fr!important;gap:32px!important}
+  [style*="height:260px"]{height:200px!important}
+  [style*="padding:40px 44px 0"]{padding:20px 20px 0!important}
+  [style*="padding:0 44px 44px"]{padding:0 20px 28px!important}
+  [style*="padding:44px"]{padding:24px 20px!important}
+  [style*="padding:48px 44px"]{padding:32px 20px!important}
+  [style*="padding:70px 6% 34px"]{padding:48px 6% 28px!important}
+  [style*="padding:110px 6% 90px"]{padding:56px 6% 48px!important}
+}
+@media (max-width:520px){
+  [style*="grid-template-columns:repeat(5,1fr)"]{grid-template-columns:1fr!important}
+}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"MedicalClinic","name":"Neje Binoi","description":"Clínica residencial de puertas abiertas para adicciones, ludopatía y trastornos emocionales.","address":{"@type":"PostalAddress","addressLocality":"Tequisquiapan","addressRegion":"Querétaro","addressCountry":"MX"},"medicalSpecialty":"Addiction Medicine","availableService":["Tratamiento de adicciones","Tratamiento de ludopatía","Tratamiento de trastornos emocionales"]}
