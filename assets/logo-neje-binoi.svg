@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 260" fill="none">
+  <circle cx="110" cy="112" r="72" stroke="#A9998C" stroke-width="2.5" stroke-dasharray="410 42" stroke-dashoffset="-99" stroke-linecap="round"></circle>
+  <circle cx="34" cy="112" r="2.6" fill="#A9998C"></circle>
+  <circle cx="186" cy="112" r="2.6" fill="#A9998C"></circle>
+  <path d="M72 150 C72 118 72 92 72 88 C72 78 80 72 90 72 C100 72 108 80 108 92 L108 150" stroke="#6FD9B8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M112 72 C130 72 144 80 144 94 C144 106 132 111 122 112 C134 113 148 119 148 133 C148 149 132 156 112 154" stroke="#6FD9B8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <text x="110" y="222" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="34" letter-spacing="4" fill="#8A7D70">NEJE</text>
+  <text x="110" y="252" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="34" letter-spacing="4" fill="#8A7D70">BINOI</text>
+</svg>
